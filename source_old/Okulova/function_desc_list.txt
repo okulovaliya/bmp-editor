@@ -1,0 +1,80 @@
+Char* nameCreate() 
+{
+ /*Берет название.bmp из конфига */
+}
+file *openFile (char *fileName, char *openAction) 
+{
+    /* Функция принимает строку, содержащую имя файла и строку наименования действия, производимого над файлом(чтение/запись);
+    Создает указатель на файл;
+    Открывает файл;
+    Возвращает указатель на файл; */
+    file *inputFile = fopen(fileName, openAction);
+#include "stdio.h"
+#include "string.h"
+file *openFile (char *fileName, char *openAction)
+	/*
+	Функция принимает строку, содержащую имя файла и 
+	строку наименования действия, производимого над файлом
+	(чтение("r")/запись("w"));
+	
+	Создает указатель на файл;
+	Открывает файл;
+	Возвращает указатель на файл;
+	*/
+    {
+	FILE * inputFile = fopen(fileName, openAction);
+    return inputFile;
+ }
+ 
+void fileRead(int i)
+{
+  /* Принимает номер бмп */
+  /* Чтение "хедера" бмп */
+}
+	}
+void fileWrite(int 1)
+{
+  /*  */
+  
+}
+readDescription(file *inputFile)
+	/*
+	Функция принимает указатель на файл и читает данные о графическом файле
+	*/
+	{
+    fread(&type, 2, 1, inputFile);
+    fread(&size, 4, 1, inputFile);
+    fread(&res, 4, 1, inputFile);
+    fread(&off, 4, 1, inputFile);
+    fread(&ssz, 4, 1, inputFile);
+    fread(&w, 4, 1, inputFile);
+    fread(&h, 4, 1, inputFile);
+    fread(end, 4, 7, inputFile);
+	}
+void overturnImg(int 1)
+int findPadding()
+	/*
+	Функция вычисляет пустой отступ в конце строки пикселей
+	*/
+	{
+	int padding=(size-off-h*w*3)/h; 
+	return padding;
+	}
+    
+readPixels(file *inputFile)
+	/*
+	Функция принимает указатель на файл и переписывает
+	данные пикселей в массив
+	*/
+	int padding=(size-off-h*w*3)/h;
+BYTE pad[20]; 
+int i,j;
+for(i=0; i<h ; i++)
+{
+  /*  */
+  
+}
+for(j=0; j<w ; j++)
+fread(rastr[i][j], 3, 1, fin);
+fread(pad, padding, 1, fin); 
+} 
